@@ -11,6 +11,16 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
+# Install bots and services
+echo "* Install trollo - a trello bot"
+npm install trollo
+echo "* Install paranoiapoodle - a irc notification bot"
+npm install paranoiapoodle
+echo "* Install lassie - a check and notification service"
+# npm install lassie-tm
+
+
+
 # Clean up
 echo "* Cleaning up."
 rm -rf /root/*
