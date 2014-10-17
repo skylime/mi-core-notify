@@ -17,9 +17,7 @@ npm install trollo
 echo "* Install paranoiapoodle - a irc notification bot"
 npm install paranoiapoodle
 echo "* Install lassie - a check and notification service"
-# npm install lassie-tm
-
-
+npm install core-lassie
 
 # Clean up
 echo "* Cleaning up."
