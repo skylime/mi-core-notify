@@ -11,13 +11,17 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
+# Install coffee script
+echo "* Install coffee script"
+npm install -g coffee-script
+
 # Install bots and services
 echo "* Install trollo - a trello bot"
-npm install trollo
+npm install -g trollo
 echo "* Install paranoiapoodle - a irc notification bot"
-npm install paranoiapoodle
+npm install -g paranoiapoodle
 echo "* Install lassie - a check and notification service"
-npm install core-lassie
+npm install -g core-lassie
 
 # Clean up
 echo "* Cleaning up."
