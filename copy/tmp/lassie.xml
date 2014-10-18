@@ -13,14 +13,13 @@
 			<service_fmri value="svc:/system/filesystem/local"/>
 		</dependency>
 
-		<method_context working_directory="/">
+		<method_context working_directory="/opt/notify">
 			<method_environment>
 				<envvar name='PATH' value='/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/bin'/>
-				<envvar name="CONFIG_FILE" value="/opt/notify/lassie.json"/>
 			</method_environment>
 		</method_context>
 
-		<exec_method type="method" name="start" exec="/opt/local/bin/lassie" timeout_seconds="60"/>
+		<exec_method type="method" name="start" exec="/opt/local/bin/lassie /opt/notify/lassie.yaml" timeout_seconds="60"/>
 		<exec_method type="method" name="stop"	exec=":kill" timeout_seconds="60"/>
 
 		<property_group name="startd" type="framework">

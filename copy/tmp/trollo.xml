@@ -13,7 +13,7 @@
 			<service_fmri value="svc:/system/filesystem/local"/>
 		</dependency>
 
-		<method_context working_directory="/">
+		<method_context working_directory="/opt/notify">
 			<method_environment>
 				<envvar name='PATH' value='/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/bin'/>
 				<envvar name="CONFIG_FILE" value="/opt/notify/trollo.json"/>
