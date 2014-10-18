@@ -23,6 +23,13 @@ npm install -g paranoiapoodle
 echo "* Install lassie - a check and notification service"
 npm install -g core-lassie
 
+# Add SMF manifests
+echo "* Add SMF manifests (default not enabled)"
+svccfg import /tmp/trollo.xml
+svccfg import /tmp/paranoiapoodle.xml
+svccfg import /tmp/lassie.xml
+rm /tmp/*.xml
+
 # Clean up
 echo "* Cleaning up."
 rm -rf /root/*
