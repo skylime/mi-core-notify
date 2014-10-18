@@ -6,9 +6,9 @@ This repository is based on [Joyent mibe](https://github.com/joyent/mibe). Pleas
 
 This mibe image contains some bots for notification.
 
-- trollo: A Trello bot
-- paranoiapoodle: A simple IRC bot which we use for munin notification
-- lassie: A remote check and notification service / watchdog
+- [trollo](https://github.com/wiedi/trollo): A Trello bot
+- [paranoiapoodle](https://github.com/wiedi/paranoiapoodle): A simple IRC bot which we use for munin notification
+- [core-lassie](https://github.com/drscream/lassie): A remote check and notification service / watchdog
 
 All bots are not configured to start automatically because they need a modified
 configuration file which we will not provide via `mdata`.
